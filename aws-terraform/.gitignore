@@ -6,3 +6,4 @@ backend.tfvars
 *.tfplan
 *.tfvars
 *.tfvars.json
+environments

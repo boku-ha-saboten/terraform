@@ -7,3 +7,5 @@ backend.tfvars
 *.tfvars
 *.tfvars.json
 environments
+dryrun.sh
+apply.sh

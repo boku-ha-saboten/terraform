@@ -1,7 +1,9 @@
 #EC2の作成
-resource "aws_instance" "amazon-linux" {
-  ami            = "ami-0599b6e53ca798bb2"
-  instance_type  = "t2.micro"
+resource "aws_instance" "terraform-ec2" {
+  ami            = var.ami_id
+  instance_type  = var.instance_type
+  subnet_id      = var.subnet_id
+  key_name       = var.key_name
 
   tags = {
     Name         = "terraform-ec2"

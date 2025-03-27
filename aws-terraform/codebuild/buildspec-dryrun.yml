@@ -3,10 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-      - chmod +x ${CODEBUILD_SRC_DIR}/scripts/install.sh
-      - ${CODEBUILD_SRC_DIR}/scripts/install.sh
+      - chmod +x aws-terraform/scripts/install.sh
+      - aws-terraform/scripts/install.sh
   
   build:
     commands:
-      - chmod +x ${CODEBUILD_SRC_DIR}/scripts/dryrun.sh
-      - ${CODEBUILD_SRC_DIR}/scripts/dryrun.sh
+      - chmod +x aws-terraform/scripts/dryrun.sh
+      - aws-terraform/scripts/dryrun.sh
